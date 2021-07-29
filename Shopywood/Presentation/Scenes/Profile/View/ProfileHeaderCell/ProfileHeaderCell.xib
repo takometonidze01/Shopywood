@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProfileHeaderCell" reuseIdentifier="ProfileHeaderCell" id="IVz-rq-aLN" customClass="ProfileHeaderCell" customModule="Shopywood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-0j-BeG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2JR-vf-OYo">
+                    <rect key="frame" x="110" y="21.5" width="100" height="97.5"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="9j3-Rv-pZt"/>
+                        <constraint firstAttribute="width" constant="100" id="jq3-TK-Tdl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="CLP-C5-M7x"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="S2v-0j-BeG" firstAttribute="top" secondItem="IVz-rq-aLN" secondAttribute="top" id="BgL-xv-6wF"/>
+                <constraint firstItem="2JR-vf-OYo" firstAttribute="centerX" secondItem="IVz-rq-aLN" secondAttribute="centerX" id="Gky-ZW-3XS"/>
+                <constraint firstItem="S2v-0j-BeG" firstAttribute="leading" secondItem="CLP-C5-M7x" secondAttribute="leading" id="JDn-LB-dio"/>
+                <constraint firstItem="2JR-vf-OYo" firstAttribute="top" secondItem="IVz-rq-aLN" secondAttribute="top" constant="20" id="Qj9-YX-nGE"/>
+                <constraint firstItem="S2v-0j-BeG" firstAttribute="trailing" secondItem="CLP-C5-M7x" secondAttribute="trailing" id="daI-KA-L4R"/>
+                <constraint firstItem="S2v-0j-BeG" firstAttribute="bottom" secondItem="CLP-C5-M7x" secondAttribute="bottom" id="hg6-kN-dmB"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="188.83928571428569"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

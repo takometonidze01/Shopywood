@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="BannerItemCell" reuseIdentifier="" id="nNa-Ew-jM0" customClass="BannerItemCell" customModule="Shopywood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="257" height="117"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCO-aK-BSP">
+                        <rect key="frame" x="0.0" y="0.0" width="257" height="117"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cck-Mn-17q">
+                        <rect key="frame" x="0.0" y="0.0" width="257" height="117"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="5ms-Uc-MYD"/>
+            <constraints>
+                <constraint firstItem="pCO-aK-BSP" firstAttribute="top" secondItem="nNa-Ew-jM0" secondAttribute="top" id="A6k-AM-QMB"/>
+                <constraint firstItem="Cck-Mn-17q" firstAttribute="leading" secondItem="nNa-Ew-jM0" secondAttribute="leading" id="FvE-iL-5IX"/>
+                <constraint firstAttribute="trailing" secondItem="pCO-aK-BSP" secondAttribute="trailing" id="L05-Up-cW9"/>
+                <constraint firstAttribute="bottom" secondItem="Cck-Mn-17q" secondAttribute="bottom" id="UcV-oW-ZKl"/>
+                <constraint firstAttribute="trailing" secondItem="Cck-Mn-17q" secondAttribute="trailing" id="XSU-sf-QAT"/>
+                <constraint firstAttribute="bottom" secondItem="pCO-aK-BSP" secondAttribute="bottom" id="oyA-ci-Gwv"/>
+                <constraint firstItem="Cck-Mn-17q" firstAttribute="top" secondItem="nNa-Ew-jM0" secondAttribute="top" id="qij-yg-k5h"/>
+                <constraint firstItem="pCO-aK-BSP" firstAttribute="leading" secondItem="nNa-Ew-jM0" secondAttribute="leading" id="ze0-zo-coD"/>
+            </constraints>
+            <size key="customSize" width="257" height="117"/>
+            <connections>
+                <outlet property="bannerImage" destination="Cck-Mn-17q" id="csf-to-XzC"/>
+            </connections>
+            <point key="canvasLocation" x="150" y="102.79017857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

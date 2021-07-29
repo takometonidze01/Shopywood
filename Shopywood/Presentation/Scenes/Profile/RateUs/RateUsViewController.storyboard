@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rate Us View Controller-->
+        <scene sceneID="cvg-FB-Urb">
+            <objects>
+                <viewController storyboardIdentifier="RateUsViewController" id="3Me-Kq-NeS" customClass="RateUsViewController" customModule="Shopywood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0rj-hs-w5Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="pUT-NZ-wd0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ueo-NI-4M4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ai-G3-zII">
+                                <rect key="frame" x="24" y="364" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Yg-fh-ito"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ai-G3-zII" firstAttribute="top" secondItem="3Yg-fh-ito" secondAttribute="top" constant="320" id="0KE-XY-b5K"/>
+                            <constraint firstItem="3Yg-fh-ito" firstAttribute="trailing" secondItem="3Ai-G3-zII" secondAttribute="trailing" constant="24" id="FjQ-ci-ES5"/>
+                            <constraint firstItem="3Ai-G3-zII" firstAttribute="leading" secondItem="3Yg-fh-ito" secondAttribute="leading" constant="24" id="eTC-Pt-J0q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rateLabel" destination="3Ai-G3-zII" id="1nl-nr-liE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CoU-b2-63C" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.39130434782609" y="-21.428571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

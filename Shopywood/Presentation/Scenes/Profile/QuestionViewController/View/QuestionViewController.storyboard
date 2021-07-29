@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="fDE-h5-VEX">
+            <objects>
+                <viewController storyboardIdentifier="QuestionViewController" id="vDJ-To-iCV" customClass="QuestionViewController" customModule="Shopywood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6f-3m-TSy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-pW-ddl">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequently Asked Questions about Online Shopping" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU2-iv-afR">
+                                <rect key="frame" x="24" y="64" width="366" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Chc-Ol-4tS"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="Chc-Ol-4tS" firstAttribute="trailing" secondItem="TEv-pW-ddl" secondAttribute="trailing" id="LTf-wQ-yIm"/>
+                            <constraint firstItem="Chc-Ol-4tS" firstAttribute="trailing" secondItem="AU2-iv-afR" secondAttribute="trailing" constant="24" id="Q1E-Bo-7fe"/>
+                            <constraint firstItem="TEv-pW-ddl" firstAttribute="leading" secondItem="Chc-Ol-4tS" secondAttribute="leading" id="Rpt-DO-V0e"/>
+                            <constraint firstItem="AU2-iv-afR" firstAttribute="leading" secondItem="Chc-Ol-4tS" secondAttribute="leading" constant="24" id="go4-nA-lOV"/>
+                            <constraint firstItem="AU2-iv-afR" firstAttribute="top" secondItem="Chc-Ol-4tS" secondAttribute="top" constant="20" id="pW0-sY-VCj"/>
+                            <constraint firstItem="Chc-Ol-4tS" firstAttribute="bottom" secondItem="TEv-pW-ddl" secondAttribute="bottom" id="paa-PJ-QCj"/>
+                            <constraint firstItem="TEv-pW-ddl" firstAttribute="top" secondItem="AU2-iv-afR" secondAttribute="bottom" constant="22.5" id="vrP-zg-PMM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="TEv-pW-ddl" id="cTq-c8-ZpY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWr-pz-2l7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

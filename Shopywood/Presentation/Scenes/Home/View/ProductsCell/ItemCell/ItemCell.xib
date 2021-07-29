@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCell" customModule="Shopywood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="346"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="346"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OF-LT-lAC">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="346"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="LS4-7I-M7o">
+                        <rect key="frame" x="24" y="10" width="271" height="230"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="xtz-eD-BS1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHp-h2-qtY">
+                        <rect key="frame" x="24" y="250" width="271" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-dr-2DS">
+                        <rect key="frame" x="24" y="275.5" width="271" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" systemColor="systemRedColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Tdf-dr-2DS" firstAttribute="top" secondItem="dHp-h2-qtY" secondAttribute="bottom" constant="5" id="5Kk-NH-dcu"/>
+                <constraint firstItem="LS4-7I-M7o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="7LG-Nj-gQ7"/>
+                <constraint firstAttribute="trailing" secondItem="Tdf-dr-2DS" secondAttribute="trailing" constant="24" id="A8l-dL-NkU"/>
+                <constraint firstAttribute="trailing" secondItem="dHp-h2-qtY" secondAttribute="trailing" constant="24" id="DEj-ET-1VR"/>
+                <constraint firstItem="9OF-LT-lAC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FzQ-r0-Xq1"/>
+                <constraint firstAttribute="trailing" secondItem="LS4-7I-M7o" secondAttribute="trailing" constant="24" id="G4j-4n-Agz"/>
+                <constraint firstAttribute="trailing" secondItem="9OF-LT-lAC" secondAttribute="trailing" id="LJF-ax-oFc"/>
+                <constraint firstItem="Tdf-dr-2DS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="LYr-5D-e0P"/>
+                <constraint firstItem="dHp-h2-qtY" firstAttribute="top" secondItem="9OF-LT-lAC" secondAttribute="bottom" constant="-96" id="Nsy-Oc-Zx6"/>
+                <constraint firstItem="LS4-7I-M7o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="X8t-wn-Q3X"/>
+                <constraint firstItem="dHp-h2-qtY" firstAttribute="top" secondItem="LS4-7I-M7o" secondAttribute="bottom" constant="10" id="ckC-9U-0ad"/>
+                <constraint firstItem="dHp-h2-qtY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="ffl-c6-QYc"/>
+                <constraint firstItem="9OF-LT-lAC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lEo-8j-ipY"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Tdf-dr-2DS" secondAttribute="bottom" constant="10" id="nTQ-6v-L0v"/>
+            </constraints>
+            <size key="customSize" width="319" height="346"/>
+            <connections>
+                <outlet property="itemImage" destination="LS4-7I-M7o" id="NDo-vt-MeF"/>
+                <outlet property="itemPriceLabel" destination="Tdf-dr-2DS" id="yRR-03-si2"/>
+                <outlet property="itemTitleLabel" destination="dHp-h2-qtY" id="PU2-ni-PzB"/>
+            </connections>
+            <point key="canvasLocation" x="268.84057971014494" y="168.08035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="3500" height="2333"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checkout View Controller-->
+        <scene sceneID="xUt-bl-9oC">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutViewController" id="cdu-5t-QwO" customClass="CheckoutViewController" customModule="Shopywood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="01y-AJ-fZf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your Credit Card." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lee-eE-AE8">
+                                <rect key="frame" x="10" y="69" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aXM-bJ-IfA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwU-9c-gYE" customClass="CreditCardView" customModule="Shopywood">
+                                <rect key="frame" x="57" y="129" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2Up-rP-W7t"/>
+                                    <constraint firstAttribute="height" constant="200" id="Qqd-iJ-zq5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gp-ad-MYe">
+                                <rect key="frame" x="57" y="369" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-TA-Aaq">
+                                <rect key="frame" x="84.5" y="420" width="37.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W5x-HT-ZEj">
+                                <rect key="frame" x="169" y="362.5" width="52.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ng9-wI-Wjc">
+                                <rect key="frame" x="241.5" y="362.5" width="64.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="***" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmC-eT-uQR">
+                                <rect key="frame" x="202" y="413.5" width="47.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDS-Qj-P9y">
+                                <rect key="frame" x="0.0" y="511" width="414" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up8-dw-9XE">
+                                <rect key="frame" x="0.0" y="599.5" width="414" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dc4-wC-sh0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Pay Now">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="payNowButton:" destination="cdu-5t-QwO" eventType="touchUpInside" id="ZVi-my-Zk1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1B4-oS-ird"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1B4-oS-ird" firstAttribute="trailing" secondItem="Up8-dw-9XE" secondAttribute="trailing" id="0f3-eN-RGH"/>
+                            <constraint firstItem="lee-eE-AE8" firstAttribute="leading" secondItem="1B4-oS-ird" secondAttribute="leading" constant="10" id="1LH-nu-gof"/>
+                            <constraint firstItem="xwU-9c-gYE" firstAttribute="top" secondItem="lee-eE-AE8" secondAttribute="bottom" constant="20" id="3bb-i4-gOD"/>
+                            <constraint firstItem="fmC-eT-uQR" firstAttribute="leading" secondItem="bAh-TA-Aaq" secondAttribute="trailing" constant="80" id="6dA-Tl-D4m"/>
+                            <constraint firstItem="ng9-wI-Wjc" firstAttribute="centerY" secondItem="W5x-HT-ZEj" secondAttribute="centerY" id="8fZ-Ys-gR2"/>
+                            <constraint firstItem="vDS-Qj-P9y" firstAttribute="leading" secondItem="1B4-oS-ird" secondAttribute="leading" id="DTz-Ld-vrB"/>
+                            <constraint firstItem="bAh-TA-Aaq" firstAttribute="centerX" secondItem="1gp-ad-MYe" secondAttribute="centerX" id="DhU-I4-NM9"/>
+                            <constraint firstItem="1gp-ad-MYe" firstAttribute="leading" secondItem="1B4-oS-ird" secondAttribute="leading" constant="57" id="I2k-XQ-6Se"/>
+                            <constraint firstItem="lee-eE-AE8" firstAttribute="top" secondItem="1B4-oS-ird" secondAttribute="top" constant="25" id="Sb8-v8-YNS"/>
+                            <constraint firstItem="Up8-dw-9XE" firstAttribute="leading" secondItem="1B4-oS-ird" secondAttribute="leading" id="bWl-bA-XGm"/>
+                            <constraint firstItem="Up8-dw-9XE" firstAttribute="top" secondItem="vDS-Qj-P9y" secondAttribute="bottom" constant="50" id="cHG-Ce-Oib"/>
+                            <constraint firstItem="1B4-oS-ird" firstAttribute="trailing" secondItem="vDS-Qj-P9y" secondAttribute="trailing" id="eGR-f1-wRL"/>
+                            <constraint firstItem="bAh-TA-Aaq" firstAttribute="top" secondItem="1gp-ad-MYe" secondAttribute="bottom" constant="30" id="eNf-TM-jXT"/>
+                            <constraint firstItem="1B4-oS-ird" firstAttribute="trailing" secondItem="lee-eE-AE8" secondAttribute="trailing" constant="10" id="f7w-NZ-OBn"/>
+                            <constraint firstItem="fmC-eT-uQR" firstAttribute="centerY" secondItem="bAh-TA-Aaq" secondAttribute="centerY" id="gA0-yq-UH1"/>
+                            <constraint firstItem="ng9-wI-Wjc" firstAttribute="leading" secondItem="W5x-HT-ZEj" secondAttribute="trailing" constant="20" id="hk7-hk-1VJ"/>
+                            <constraint firstItem="W5x-HT-ZEj" firstAttribute="centerY" secondItem="1gp-ad-MYe" secondAttribute="centerY" id="jAo-h8-daE"/>
+                            <constraint firstItem="1gp-ad-MYe" firstAttribute="top" secondItem="xwU-9c-gYE" secondAttribute="bottom" constant="40" id="oRw-fU-ZvP"/>
+                            <constraint firstItem="xwU-9c-gYE" firstAttribute="centerX" secondItem="lee-eE-AE8" secondAttribute="centerX" id="opO-5f-kWu"/>
+                            <constraint firstItem="W5x-HT-ZEj" firstAttribute="leading" secondItem="1gp-ad-MYe" secondAttribute="trailing" constant="20" id="pEe-uE-Rtn"/>
+                            <constraint firstItem="vDS-Qj-P9y" firstAttribute="top" secondItem="bAh-TA-Aaq" secondAttribute="bottom" constant="70" id="uWA-9h-cmW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardCvv" destination="fmC-eT-uQR" id="cme-hW-3Mf"/>
+                        <outlet property="cardExpiryMonth" destination="W5x-HT-ZEj" id="Cuj-Hv-Ksi"/>
+                        <outlet property="cardExpiryYear" destination="ng9-wI-Wjc" id="ARX-At-aaj"/>
+                        <outlet property="creditCardView" destination="xwU-9c-gYE" id="QYc-Ds-bZt"/>
+                        <outlet property="totalPrice" destination="vDS-Qj-P9y" id="hQQ-ii-207"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V84-de-WKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="26.116071428571427"/>
+        </scene>
+    </scenes>
+</document>

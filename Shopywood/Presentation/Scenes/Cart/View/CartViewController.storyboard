@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart View Controller-->
+        <scene sceneID="d7I-Sr-BtG">
+            <objects>
+                <viewController storyboardIdentifier="CartViewController" id="zpP-Md-hRq" customClass="CartViewController" customModule="Shopywood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="syJ-wF-plx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-2x-arb">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3ul-VC-1RP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CHECKOUT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkoutButton:" destination="zpP-Md-hRq" eventType="touchUpInside" id="cSM-OH-ZvN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBF-ZO-GGL">
+                                <rect key="frame" x="0.0" y="742" width="414" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="1Zl-Yn-EXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L6I-KV-f5G">
+                                <rect key="frame" x="0.0" y="44" width="414" height="698"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="plw-tQ-ZKh"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="plw-tQ-ZKh" firstAttribute="bottom" secondItem="hSb-2x-arb" secondAttribute="bottom" id="2yw-nF-VxS"/>
+                            <constraint firstItem="plw-tQ-ZKh" firstAttribute="trailing" secondItem="GBF-ZO-GGL" secondAttribute="trailing" id="5ag-e5-7M1"/>
+                            <constraint firstItem="GBF-ZO-GGL" firstAttribute="top" secondItem="L6I-KV-f5G" secondAttribute="bottom" id="7ew-nX-9C4"/>
+                            <constraint firstItem="plw-tQ-ZKh" firstAttribute="trailing" secondItem="L6I-KV-f5G" secondAttribute="trailing" id="9dU-Md-Xsq"/>
+                            <constraint firstItem="hSb-2x-arb" firstAttribute="leading" secondItem="plw-tQ-ZKh" secondAttribute="leading" id="CWp-Xy-ogR"/>
+                            <constraint firstItem="GBF-ZO-GGL" firstAttribute="leading" secondItem="plw-tQ-ZKh" secondAttribute="leading" id="H4v-Av-BmQ"/>
+                            <constraint firstItem="L6I-KV-f5G" firstAttribute="top" secondItem="plw-tQ-ZKh" secondAttribute="top" id="d1E-qM-jbW"/>
+                            <constraint firstItem="plw-tQ-ZKh" firstAttribute="trailing" secondItem="hSb-2x-arb" secondAttribute="trailing" id="heI-kR-Oa3"/>
+                            <constraint firstItem="hSb-2x-arb" firstAttribute="top" secondItem="GBF-ZO-GGL" secondAttribute="bottom" id="uRz-hx-nqi"/>
+                            <constraint firstItem="L6I-KV-f5G" firstAttribute="leading" secondItem="plw-tQ-ZKh" secondAttribute="leading" id="vTw-KD-PxV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTotla" destination="GBF-ZO-GGL" id="6cA-xm-dBQ"/>
+                        <outlet property="tableView" destination="L6I-KV-f5G" id="Enn-wq-FR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qw-Nc-C0O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
